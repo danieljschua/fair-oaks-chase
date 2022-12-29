@@ -1,0 +1,255 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap'); /* Montserrat */
+
+/* General classes */
+:root {
+  --light: #f1f1f1;
+  --dark: #16213E;
+  --alt-blue: #0088a9;
+  --montserrat: 'Montserrat', sans-serif;
+  --gray: #eeeeee;
+  --orange: #eda342;
+}
+
+html,
+body {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+  width: 100%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--montserrat);
+}
+
+.links {
+  text-decoration: none;
+  color: var(--light);
+}
+
+.hover-color {
+  transition: all 0.4s ease 0s;
+}
+.hover-color:hover {
+  color: var(--alt-blue);
+}
+.hover-up {
+  transition: 0.3s;
+}
+.hover-up:hover {
+  transform: translateY(-2%);
+}
+.hover-link-button {
+  width: 100%;
+  border: 1px solid var(--dark);
+  border-radius: 1rem;
+  color: var(--dark);
+  text-decoration: none;
+  transition: 0.3s;
+}
+.hover-link-button:hover {
+  background-color: var(--gray);
+  color: var(--alt-blue)
+}
+
+section { 
+  width: 100%;
+  padding: 5rem;
+  text-align: center;
+}
+section h2 {
+  margin-bottom: 2rem;
+}
+.dark-section {
+  background-color: var(--dark);
+  color: var(--light);
+}
+.light-section {
+  background-color: var(--light);
+  color: var(--dark)
+}
+.text-card {
+  margin: auto;
+  padding: 2rem;
+  width: 80%;
+  border-radius: 1rem;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  background-color: var(--light);
+  color: var(--dark);
+  line-height: 3rem;
+}
+
+/* Navbar */
+.navbar {
+  width: 100%;
+  padding: 3rem 5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--light);
+  background-color: var(--dark);
+}
+
+.navbar ul {
+  list-style-type: none;
+}
+.navbar ul li {
+  margin: 0 2rem;
+  display: inline-block;
+}
+
+/* Section 1 */
+.intro {
+  width: 100%;
+  min-height: 75vh;
+  padding: 4rem;
+  display: flex;
+  justify-content: space-around;
+  text-align: left;
+  color: var(--dark);
+}
+.intro-title {
+  font-size: 3.5rem;
+  line-height: 8rem;
+}
+.intro img {
+  width: 30%;
+}
+
+@media all and (max-width: 1250px) {
+
+  .intro-title h1 {
+    padding: 0;
+    font-size: 3.5rem;
+  }
+
+}
+@media all and (max-width: 1000px) {
+  .intro-title h1 {
+    font-size: 3rem;
+  }
+}
+@media all and (max-width: 590px) {
+  .navbar {
+    display: none;
+  }
+  .intro-title {
+    padding-top: 20vh;
+    font-size: 3rem;
+  }
+  .intro-title h3 {
+    padding-top: 10vh;
+    font-size: 2rem;
+  }
+}
+@media all and (max-width: 410px) {
+  .intro-title {
+    font-size: 4rem;
+  }
+  .intro-title {
+    font-size: 1.5rem;
+  }
+}
+
+/* @media all and (max-width: 1150px) {
+  .about {
+    flex-direction: column;
+    gap: 3rem;
+    padding: 2.5rem;
+  }
+  .about .text-card {
+    width: 100%;
+  }
+  .club-photos {
+    width: 80%;
+  }
+  .img {
+    width: 100%;
+  }
+} */
+
+/* @media all and (max-width: 750px) {
+  .about-section {
+    flex-direction: column;
+    gap: 3rem;
+    padding: 0.5rem;
+  }
+  .about-section .text-card {
+    width: 100%;
+  }
+  .club-photos {
+    width: 100%;
+  }
+  .img {
+    width: 100%;
+  }
+} */
+
+/* News */
+.news .text-card {
+  background-color: var(--orange);
+}
+
+/* Get together */
+.get-together-photos {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-items: center;
+  gap: 6rem 1rem;
+}
+.get-together-photos img {
+  width: 75%;
+  border-radius: 1rem;
+}
+
+
+/* Links */
+.links-section {
+  padding: 5rem;
+  color: var(--dark);
+  text-align: center;
+}
+.link-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+.link-grid a {
+  margin: auto;
+  width: 50%;
+}
+
+/* Directors */
+.directors-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.profile {
+  width: 25%;
+}
+.profile h2 {
+  padding: 2rem;
+}
+.profile img {
+  width: 100%;
+  margin: 2rem 0 2rem;
+  border-radius: 50%;
+}
+
+/* Footer */
+footer {
+  background-color: var(--light);
+  min-height: 10vh;
+  padding: 2.5rem 5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer small {
+  text-align: center;
+}
