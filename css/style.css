@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap'); /* Montserrat */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import './directors.css';
 
 /* General classes */
 :root {
@@ -42,10 +43,13 @@ body {
   transform: translateY(-2%);
 }
 .hover-link-button {
-  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   border: 1px solid var(--dark);
   border-radius: 1rem;
-  color: var(--dark);
+  color: inherit;
   text-decoration: none;
   transition: 0.3s;
 }
@@ -67,7 +71,7 @@ section h2 {
   color: var(--light);
 }
 .light-section {
-  background-color: var(--light);
+  background-color: white;
   color: var(--dark)
 }
 .text-card {
@@ -153,6 +157,16 @@ section h2 {
   }
 }
 
+.about-section, .news-section {
+  display: grid;
+  justify-items: center;
+  gap: 2rem;
+}
+.about-section .map {
+  border-radius: 1rem;
+  width: 80%;
+}
+
 /* @media all and (max-width: 1150px) {
   .about {
     flex-direction: column;
@@ -188,16 +202,20 @@ section h2 {
 } */
 
 /* News */
-.news .text-card {
+.news-section .text-card {
   background-color: var(--orange);
+}
+.news-section .hover-link-button {
+  padding: 2rem;
+  width: 25%;
 }
 
 /* Get together */
 .get-together-photos {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  justify-items: center;
-  gap: 6rem 1rem;
+  place-items: center;
+  gap: 3rem 1rem;
 }
 .get-together-photos img {
   width: 75%;
@@ -207,6 +225,7 @@ section h2 {
 
 /* Links */
 .links-section {
+  background-color: white;
   padding: 5rem;
   color: var(--dark);
   text-align: center;
@@ -214,29 +233,17 @@ section h2 {
 .link-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 1rem;
+  grid-template-rows: 1fr 1fr 1fr;
+  place-items: center;
+  gap: 2rem;
 }
 .link-grid a {
-  margin: auto;
   width: 50%;
 }
 
-/* Directors */
-.directors-list {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-.profile {
-  width: 25%;
-}
-.profile h2 {
-  padding: 2rem;
-}
-.profile img {
-  width: 100%;
-  margin: 2rem 0 2rem;
-  border-radius: 50%;
+/* Calendar */
+.calendar {
+  color: var(--dark);
 }
 
 /* Footer */

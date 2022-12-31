@@ -1,0 +1,19 @@
+.directors-section {
+  background-color: white;
+}
+.directors-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.profile {
+  width: 25%;
+}
+.profile h2 {
+  padding: 2rem;
+}
+.profile img {
+  width: 100%;
+  margin: 2rem 0 2rem;
+  border-radius: 50%;
+}

@@ -1,0 +1,16 @@
+fix navbar
+
+calendar button where the annual calendar is
+
+budget with directors
+* annual budget
+* monthly financials
+* vendor contract
+* reserve study
+* ability to communicate with homeowners
+* ability to pay online
+
+map on bottom of first page
+
+responsivity
+* consider clamp and aspect-ratio 
